@@ -12,7 +12,7 @@ public class LibroDAO {
 	private String DB_USER = "bibliotecario";
 	private String DB_PASS = "bibliotecario";
 	private Connection conn = null;
-	private java.sql.Statement stm = null;
+	private Statement stm = null;
 	PreparedStatement ps = null;
 	private ResultSet rs = null;
 	
