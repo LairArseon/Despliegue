@@ -49,7 +49,7 @@ public class LibroDAO {
 	
 	public boolean insertar(Libro libro) throws RuntimeException {
 		try {
-			ps = conn.prepareStatement("insert libro values(?,?,?)");
+			ps = conn.prepareStatement("insert into libros values(?,?,?)");
 			ps.setInt(1, libro.getIsbn());
 			ps.setString(2, libro.getTitulo());
 			ps.setString(3, libro.getAutor());
